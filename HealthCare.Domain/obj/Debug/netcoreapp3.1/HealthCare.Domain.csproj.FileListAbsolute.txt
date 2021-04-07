@@ -1,0 +1,9 @@
+C:\Users\cristina.golban\source\repos\HealthCareWEBAPP\HealthCare.Domain\bin\Debug\netcoreapp3.1\HealthCare.Domain.deps.json
+C:\Users\cristina.golban\source\repos\HealthCareWEBAPP\HealthCare.Domain\bin\Debug\netcoreapp3.1\HealthCare.Domain.dll
+C:\Users\cristina.golban\source\repos\HealthCareWEBAPP\HealthCare.Domain\bin\Debug\netcoreapp3.1\HealthCare.Domain.pdb
+C:\Users\cristina.golban\source\repos\HealthCareWEBAPP\HealthCare.Domain\obj\Debug\netcoreapp3.1\HealthCare.Domain.csprojAssemblyReference.cache
+C:\Users\cristina.golban\source\repos\HealthCareWEBAPP\HealthCare.Domain\obj\Debug\netcoreapp3.1\HealthCare.Domain.AssemblyInfoInputs.cache
+C:\Users\cristina.golban\source\repos\HealthCareWEBAPP\HealthCare.Domain\obj\Debug\netcoreapp3.1\HealthCare.Domain.AssemblyInfo.cs
+C:\Users\cristina.golban\source\repos\HealthCareWEBAPP\HealthCare.Domain\obj\Debug\netcoreapp3.1\HealthCare.Domain.csproj.CoreCompileInputs.cache
+C:\Users\cristina.golban\source\repos\HealthCareWEBAPP\HealthCare.Domain\obj\Debug\netcoreapp3.1\HealthCare.Domain.dll
+C:\Users\cristina.golban\source\repos\HealthCareWEBAPP\HealthCare.Domain\obj\Debug\netcoreapp3.1\HealthCare.Domain.pdb
