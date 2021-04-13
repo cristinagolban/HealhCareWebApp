@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
+using System.Linq;
 
 namespace HealthCare.Api.Controllers
 {
@@ -12,11 +13,11 @@ namespace HealthCare.Api.Controllers
     {
         private static List<Appointment> _appointments = new List<Appointment>()
         {
-            new Appointment { 
-                Id = Guid.NewGuid(), 
-                Time = DateTime.Now, 
-                Doctor = new Doctor 
-                { 
+            new Appointment {
+                Id = Guid.NewGuid(),
+                Time = DateTime.Now,
+                Doctor = new Doctor
+                {
                     Name = "Doctor 1",
                     Ward = "Ward 1",
                 } ,
@@ -24,7 +25,23 @@ namespace HealthCare.Api.Controllers
                 {
                     Name = "Patient 1",
                 }
+            },
+
+             new Appointment {
+                Id = Guid.NewGuid(),
+                Time = DateTime.Now,
+                Doctor = new Doctor
+                {
+                    Name = "Doctor 2",
+                    Ward = "Ward 2",
+                } ,
+                Patient = new Patient
+                {
+                    Name = "Patient 2",
+                }
             }
+
+
         };
 
         public AppointmentController()
@@ -45,5 +62,22 @@ namespace HealthCare.Api.Controllers
 
             return Ok();
         }
+
+        [HttpDelete]
+        [Route("{appointmentId}")]
+        public IActionResult DeleteAppointment(Guid appointmentId)
+        {
+            var toDelete = _appointments.SingleOrDefault(a => a.Id == appointmentId);
+
+            if(toDelete == null)
+            {
+                return BadRequest("No appointment with given Id could be found");
+            }
+
+            _appointments.Remove(toDelete);
+
+            return Ok();
+        }
+
     }
 }
